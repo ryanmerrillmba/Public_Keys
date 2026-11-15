@@ -13,6 +13,12 @@ This repository publishes the public key associated with the GitHub account
 
 Use the checksum file to confirm you have the exact published PEM bytes:
 
+**SHA-256 (`archive-mldsa87-public.pem`):**
+
+```text
+4faaa07940542d68f941d0c3e9a6133b5f1c6fd947a1dd5f8bfb275daee8aa13
+```
+
 ```sh
 sha256sum -c archive-mldsa87-public.pem.sha256
 ```
