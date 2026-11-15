@@ -32,14 +32,17 @@ shasum -a 256 archive-mldsa87-public.pem
 
 ## Verify the timestamp proof
 
-Install [OpenTimestamps](https://opentimestamps.org/) and run:
+No software installation is required. Use the official
+[OpenTimestamps Stamp & Verify page](https://opentimestamps.org/):
 
-```sh
-ots verify archive-mldsa87-public.pem.ots
-```
+1. In the **Stamp & Verify** section, upload
+   `archive-mldsa87-public.pem.ots` as the `.ots proof file to verify`.
+2. When prompted, upload the original
+   `archive-mldsa87-public.pem` file as the `stamped file`.
+3. Review the resulting timestamp and attestation information.
 
-If the proof needs newer calendar attestations, run `ots upgrade` first and
-then verify it again. A successful verification shows evidence that the public
-key's exact contents existed no later than the time anchored by the proof.
+OpenTimestamps calculates the file hash in the browser. A successful
+verification shows evidence that the exact PEM file existed no later than the
+time anchored by the proof.
 
 The repository's commit history records when these files were published here.
