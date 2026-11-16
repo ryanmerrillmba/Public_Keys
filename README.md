@@ -45,4 +45,9 @@ OpenTimestamps calculates the file hash in the browser. A successful
 verification shows evidence that the exact PEM file existed no later than the
 time anchored by the proof.
 
+### Expected attestation
+
+For this proof, OpenTimestamps attests the PEM file's existence through
+Bitcoin block `976032`, as of November 15, 2026, Mountain Standard Time.
+
 The repository's commit history records when these files were published here.
